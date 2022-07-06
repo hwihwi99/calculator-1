@@ -54,6 +54,11 @@ int multi(int a, int b)
  
 int div(int a, int b)
 {
-	//TODO implementation
-	return 0;
+	if(b == 0){
+		printf("두번째 인자값은 0이 될 수 없습니다\n");
+		return -1;
+	}
+
+	int result = a / b;
+	return result;
 }
